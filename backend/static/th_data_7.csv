@@ -1,0 +1,3 @@
+show_id,show_name,ratings,show_tags,ticket_price,timings,seats,booked
+14,Show41,0,Comedy,200,14:45:00,50,0
+15,Show42,0,Family,250,11:40:00,50,0

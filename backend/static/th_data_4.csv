@@ -1,0 +1,3 @@
+show_id,show_name,ratings,show_tags,ticket_price,timings,seats,booked
+6,Show21,0,Thriller,250,18:00:00,25,25
+7,Show3,4,Comedy,45,9:25:00,45,7

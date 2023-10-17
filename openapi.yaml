@@ -1,0 +1,108 @@
+openapi: 3.0.3
+info:
+  title: Ticket Show
+  description: |-
+    This is a Ticket Show Server.
+  version: Test Project
+servers:
+  - url: http://127.0.0.1:8080
+tags:
+  - name: Admin
+    description: Controls Venues and Shows
+  - name: User
+    description: Can book and rate shows
+paths:
+  /:
+    get:
+      tags:
+        - home page
+      summary: choose to login as admin or user
+      responses:
+        '200':
+          description: Successful choosing
+  /admin:
+    get:
+      summary: "admin login"
+      responses:
+        200:
+          description: Successful rendering of admin login page
+
+  /admin/reg:
+    get:
+      summary: "admin register"
+      responses:
+        200:
+          description: Successful rendering of admin login page
+    post:
+      summary: "redirect to admin dashboard"
+      responses:
+        200:
+          description: Successful rendering of admin dashboard page
+          
+  /admin_dashboard:
+    get:
+      summary: "Display dashboard"
+      responses:
+        200:
+          description: Successful admin login
+  
+  /summary:
+    get:
+      summary: "admin summary"
+      responses:
+        200:
+          description: Display summary page
+  
+  tags:
+  - name: Show
+    description: Controls Venues and Shows
+  - name: User
+    description: Can book and rate shows
+  paths:
+  /user:
+    get:
+      summary: "user login"
+      responses:
+        200:
+          description: Successful admin login
+    post:
+      summary: "redirect to user dashboard"
+      responses:
+        200:
+          description: Successful rendering of user dashboard page
+        
+  /user/reg:
+    get:
+      summary: "user register"
+      responses:
+        200:
+          description: Successful rendering of user login page
+    post:
+      summary: "redirect to user dashboard"
+      responses:
+        200:
+          description: Successful rendering of user dashboard page
+          
+  /user_dashboard:
+    get:
+      summary: "user dashboard"
+      responses:
+        200:
+          description: Successful rendering of user dashboard page
+               
+  /profile:
+    get:
+      summary: "user profile page"
+      responses:
+        200:
+          description: Successful rendering of user profle page
+        
+  /bookings:
+    get:
+      summary: "user bookings"
+      responses:
+        200:
+          description: Successful rendering of show bookings page
+    
+ 
+ 

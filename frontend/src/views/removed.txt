@@ -1,0 +1,75 @@
+<button
+      type="button"
+      class="btn btn-outline-success btn-lg rounded-3"
+      data-bs-toggle="modal"
+      data-bs-target="#staticBackdropAddTheatre"
+    >
+      Add Theatre
+    </button>
+    <Theatre />
+    <div>
+      <!-- Button trigger modal -->
+      <div
+        id="staticBackdropAddTheatre"
+        class="modal fade"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Add Theatre</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="my-4">
+                <label>Name of the Theatre :</label>
+                <input v-model="name" type="text" required />
+              </div>
+              <div class="my-4">
+                <label>Location of Theatre :</label>
+                <input v-model="loc" type="text" required />
+              </div>
+              <div class="my-4">
+                <label>Capacity of Theatre :</label>
+                <input v-model="cap" type="text" required />
+              </div>
+              <div class="my-4">
+                <label>Upload Theatre View Image :</label>
+                <input
+                  type="file"
+                  @change="handleImageUpload"
+                  accept="image/*"
+                />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                type="button"
+                @click="addT"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+

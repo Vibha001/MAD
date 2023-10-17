@@ -1,0 +1,11 @@
+Flask
+flask_restful
+flask_cors
+Flask-SQLAlchemy
+matplotlib
+Flask-security-too
+bcrypt
+Flask-JWT-Extended
+redis
+celery[redis]
+Flask-Caching

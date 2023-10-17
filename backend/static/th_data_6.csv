@@ -1,0 +1,3 @@
+show_id,show_name,ratings,show_tags,ticket_price,timings,seats,booked
+11,Show31,0,Horror,22,15:20:00,45,0
+12,Show32,0,Family,250,11:10:00,25,0
