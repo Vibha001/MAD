@@ -24,4 +24,4 @@ The CRUD for admin is with respect to managing shows and venues whereas for user
 
 
 ## Credits
-This is an individually done project for the course of Modern Application Development II.
+This is an individually done project for the course of Modern Application Development II as a part of the curriculum in IIT Madras.
